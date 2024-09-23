@@ -1,0 +1,93 @@
+.invitacion-container {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-image: url('/fondo3.webp'); /* Ruta de la imagen de fondo */
+  //background-size: cover; /* La imagen cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-attachment: fixed; /* Fija la imagen al fondo */
+  border-radius: 20px;
+}
+
+.card {
+  //background: rgb(255,255,255);
+  //background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(251,252,217,1) 39%, rgba(215,219,187,0.7931547619047619) 100%);
+  
+  background: rgba(255, 255, 255, 0.5); /* Fondo blanco con opacidad */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  font-family: 'Georgia', serif;
+}
+
+.cardHeader {
+  //background: rgb(255,255,255);
+  //background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(251,252,217,1) 39%, rgba(215,219,187,0.7931547619047619) 100%);
+  
+  //background: rgba(255, 255, 255, 0.5); /* Fondo blanco con opacidad */
+  padding: 0px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  font-family: 'Georgia', serif;
+}
+
+.titulo {
+  font-size: 28px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.mensaje, .detalles, .agradecimiento {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.firma {
+  margin-top: 25px;
+  font-style: italic;
+}
+
+.imgPrincipal {
+   max-width: 100%;
+  height: auto;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.imgPaloma, .imgCruz {
+  max-width: 80px;
+  margin: 15px 0;
+}
+
+.imgPaloma {
+  max-width: 100px;
+}
+
+.imgCruz {
+  max-width: 70px;
+}
+
+/* Estilos extra para hacer la tarjeta más elegante */
+.card::before {
+  content: '';
+  position: absolute;
+  //background-image: url('/fondo.jpg');
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  opacity: 0.1;
+  border-radius: 15px;
+  z-index: -1;
+}
