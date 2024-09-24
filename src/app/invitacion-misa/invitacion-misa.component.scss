@@ -40,9 +40,11 @@
 }
 
 .titulo {
+  background: rgba(255, 255, 255, 0.5); /* Fondo blanco con opacidad */
   font-size: 28px;
   color: #555;
   margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 .mensaje, .detalles, .agradecimiento {
